@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://codex-t4pg.onrender.com/', {
+    const response = await fetch('https://codex-your-d3inkoeb9-harisarshad235.vercel.app/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
