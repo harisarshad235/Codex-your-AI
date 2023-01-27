@@ -85,11 +85,15 @@ const handleSubmit = async (e) => {
 
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
+    
+
+
 
     const response = await fetch('https://codex-your-d3inkoeb9-harisarshad235.vercel.app/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.OPENAI_SECRET_KEY}`,
         },
         body: JSON.stringify({
             prompt: data.get('prompt')
